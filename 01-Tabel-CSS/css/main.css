@@ -1,0 +1,31 @@
+table {
+  width: 50%;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+caption {
+  font-family: Stencil, "Arial Narrow Bold", sans-serif;
+  font-size: 3em;
+}
+tr {
+  height: 40px;
+}
+th {
+  background-color: #c5d6de;
+  font-size: 1.5em;
+}
+td {
+  width: 30%;
+  text-align: center;
+  vertical-align: center;
+}
+.sit {
+  background-color: #e1d1c6;
+}
+.magna {
+  background-color: #d2a98f;
+}

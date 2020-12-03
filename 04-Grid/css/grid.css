@@ -1,0 +1,80 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.grid {
+  margin: 2em;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  /*alternatief met templates*/
+  /*grid-template-areas:
+    "p1 p2 p3"
+    "p4 p5 p6"
+    "p7 p8 p9";*/
+}
+p {
+  border: 1px solid black;
+  font-size: 5em;
+  margin: 0px;
+  padding: .7em;
+  align-self: center;
+  justify-self: center;
+}
+p:first-child {
+  grid-area: 1/3;
+}
+p:nth-child(2) {
+  grid-area: 3/2;
+}
+p:nth-child(3) {
+  grid-area: 2/1;
+}
+p:nth-child(4) {
+  grid-area: 3/3;
+}
+p:nth-child(5) {
+  grid-area: 1/2;
+}
+p:nth-child(6) {
+  grid-area: 3/1;
+}
+p:nth-child(7) {
+  grid-area: 2/3;
+}
+p:nth-child(8) {
+  grid-area: 1/1;
+}
+p:last-child {
+  grid-area: 2/2;
+}
+/*alternatief met templates*/
+/*
+p:first-child {
+  grid-area: p3;
+}
+p:nth-child(2) {
+  grid-area: p8;
+}
+p:nth-child(3) {
+  grid-area: p4;
+}
+p:nth-child(4) {
+  grid-area: p9;
+}
+p:nth-child(5) {
+  grid-area: p2;
+}
+p:nth-child(6) {
+  grid-area: p7;
+}
+p:nth-child(7) {
+  grid-area: p6;
+}
+p:nth-child(8) {
+  grid-area: p1;
+}
+p:last-child {
+  grid-area: p5;
+}
+*/
