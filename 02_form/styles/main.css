@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+/* Algemene opmaak */
+/*******************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-image: url(../images/batthern.png);
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Formulieropmaak */
+/********************/
+
+fieldset {
+  border-color: rgb(8, 167, 235);
+  border-radius: 0 0 10px 10px;
+}
+
+legend {
+  color: rgb(8, 167, 235);
+}
+
+textarea {
+  width: 100%;
+}
+
+/* Opmaak van de Verzend-knop */
+input[type='submit'] {
+  transition-duration: 2s;
+  padding: 10px 20px;
+  margin: 0.75rem 0;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+[type='submit']:hover {
+  color: #fff;
+  background-color: rgb(8, 167, 235);
+}
+/* Layout */
+/**********/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  max-width: 960px;
+  min-height: 100vh;
+  padding: 0.75rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.grid-container {
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 525px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
