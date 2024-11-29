@@ -4,7 +4,7 @@ body {
 
 h1 {
   font-family: 'Kablammo', sans-serif;
-  text-align: center;  
+  text-align: center;
   color: green;
   opacity: 0;
   animation-name: make-visible;
@@ -14,9 +14,10 @@ h1 {
 
 @keyframes make-visible {
   100% {
-    opacity: 1;    
+    opacity: 1;
   }
 }
+
 .grid {
   display: grid;
   gap: 5px;
@@ -45,10 +46,6 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .grid h2 {
-    grid-column: span 2;
-  }
-
   .grid div {
     display: flex;
     flex-direction: column;
@@ -60,4 +57,3 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-

@@ -1,6 +1,10 @@
 /* Algemene opmaak */
-* {
+html {
     box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
 }
 
 body {
@@ -39,8 +43,7 @@ main {
 }
 
 .image-row > div {
-    flex-grow: 1;
-    flex-basis: 0;
+    flex: 1 0 0;
 }
 
 section {
@@ -68,13 +71,13 @@ td, th {
     text-align: center;
 }
 
-col:first-child {
-    background-color: lightskyblue;
+col {
     width: 250px;
 }
 
-col:not(:first-child) {
-    width: calc((100% - 250px) / 4);
+col:first-child {
+    background-color: lightskyblue;
+    width: 250px;
 }
 
 caption {
@@ -98,7 +101,7 @@ tbody > tr > td:hover {
 
 tbody > tr:nth-child(1) > td:first-child,
 tbody > tr:nth-child(3) > td:first-child {
-    animation-duration: 0s;
+    animation: none;
 }
 
 @keyframes wiggle {
@@ -127,9 +130,6 @@ tbody > tr:nth-child(3) > td:first-child {
         transform: rotate(-4deg);
     }
 
-    100% {
-        transform: rotate(0);
-    }
 }
 
 /* Opmaak formulier */
@@ -140,10 +140,10 @@ label {
     float: left;
 }
 
-select:first-of-type, select:last-of-type {
+select {
     display: none;
 }
 
-#oosd2:checked + select:first-of-type, #web1:checked + select:last-of-type {
+#oosd2:checked + select, #web1:checked + select {
     display: inline;
 }
