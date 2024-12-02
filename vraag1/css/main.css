@@ -146,3 +146,12 @@ select {
 #oosd2:checked + select, #web1:checked + select {
     display: inline;
 }
+
+fieldset > div {
+    display: flex;
+    margin-block: 5px;
+}
+
+label {
+    width: 150px;
+}
