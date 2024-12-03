@@ -132,13 +132,6 @@ tbody > tr:nth-child(3) > td:first-child {
 }
 
 /* Opmaak formulier */
-
-label {
-    display: block;
-    width: 150px;
-    float: left;
-}
-
 select {
     display: none;
 }
